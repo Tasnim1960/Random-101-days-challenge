@@ -1,0 +1,56 @@
+/* Grid background */
+body {
+  font-family: Arial, sans-serif;
+  background-image:
+    linear-gradient(to right,black 1px, transparent 1px),
+    linear-gradient(to bottom, black 1px, transparent 1px);
+  background-size: 10px 10px;
+ 
+}
+
+/* Title */
+h1 {
+  font-size: 28px;
+
+  color: black;
+  background-color: white;   /* 🔥 THIS FIX */
+  display: inline-block;     /* so background fits text only */
+  
+}
+
+/* Container */
+.container {
+  width: 300px;
+  height: 200px;
+  border: 3px solid black;
+  position: relative;
+  background-color: white;
+}
+
+/* Center text */
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Bottom-right box */
+.box {
+  width: 90px;
+  height: 60px;
+  border: 3px solid black;
+
+
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10px;
+  color: black;
+}
